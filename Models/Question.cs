@@ -24,7 +24,7 @@ namespace QuizForMe.Models
 
         public Themes ThemeOfQuestion { get; set; }
         
-        public int QuizID { get; set; }
-        public required Quiz QuizOwner { get; set; }
+        public int? QuizID { get; set; }
+        public Quiz? QuizOwner { get; set; }
     }
 }
