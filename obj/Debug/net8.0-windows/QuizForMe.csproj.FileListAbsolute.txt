@@ -1,0 +1,9 @@
+C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\QuizForMe.csproj.AssemblyReference.cache
+C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\QuizForMe.Form1.resources
+C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\QuizForMe.Properties.Resources.resources
+C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\QuizForMe.csproj.GenerateResource.cache
+C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\QuizForMe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\QuizForMe.AssemblyInfoInputs.cache
+C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\QuizForMe.AssemblyInfo.cs
+C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\QuizForMe.csproj.CoreCompileInputs.cache
+C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\QuizForMe.sourcelink.json
