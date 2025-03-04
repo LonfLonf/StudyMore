@@ -21,10 +21,12 @@ namespace QuizForMe
         List<Question> QuestionsList = new List<Question>();
         EnumConverter converter = new EnumConverter();
         EnumConverterToDifficulty converterToDifficulty = new EnumConverterToDifficulty();
+        string AuxiliarImage, PathUrl;
 
         public CreateQuizForm()
         {
             InitializeComponent();
+            label8.Text = "Questions Counter: " + QuestionsList.Count.ToString();
         }
 
         private void CreateQuizForm_Load(object sender, EventArgs e)
@@ -37,12 +39,11 @@ namespace QuizForMe
         {
             string TitleOfQuestion = TitleOfQuestionTextBox.Text;
             string DescriptionOfQuestion = DescriptionQuestionTextBox.Text;
-            string AuxiliarImage = AuxiliarImageTextBox.Text;
             string Option_A = OptionATextBox.Text;
             string Option_B = OptionBTextBox.Text;
             string Option_C = OptionCTextBox.Text;
             string Option_D = OptionDTextBox.Text;
-            char CorrectOption = CorrectOptionTextBox.Text.Length > 0 ? CorrectOptionTextBox.Text[0] : '\0';
+            char CorrectOption = CorrectionOptionComboBox.Text.Length > 0 ? CorrectionOptionComboBox.Text[0] : '\0';
             int PointsToEarn = 0;
             int PointsToLost = 0;
 
@@ -51,14 +52,14 @@ namespace QuizForMe
                 int difficultyInt = (int)converterToDifficulty.ConvertStringToEnum(DifficultyComboBox.Text);
                 PointsToEarn = GetPointsToEarn(difficultyInt);
                 PointsToLost = GetPointsToLost(difficultyInt);
-            } 
+            }
             catch (ArgumentException ex)
             {
                 Debug.WriteLine("Error in Conversion - Error: " + ex.ToString());
                 label5.Text = "Question Added Error";
                 label5.ForeColor = Color.Red;
                 return;
-            } 
+            }
             catch (Exception ex)
             {
                 Debug.WriteLine("Error in Conversion" + ex.ToString());
@@ -98,7 +99,7 @@ namespace QuizForMe
                 label5.Text = "Question Added Error";
                 label5.ForeColor = Color.Red;
             }
-
+            label8.Text = "Questions Counter: " + QuestionsList.Count.ToString();
             Clear();
         }
 
@@ -111,22 +112,21 @@ namespace QuizForMe
         {
             string QuizTitle = TitleOfQuizTextBox.Text;
             string QuizDescription = DescriptioQuizTextBox.Text;
-            string PathUrl = URLQuizTextBox.Text;
             Themes theme = Themes.OtherStuff;
-            
+
             try
             {
                 theme = converter.ConvertStringToEnum(ThemeQuizComboBox.Text);
-            } 
+            }
             catch (ArgumentException ex)
             {
                 Debug.WriteLine("Error in Convert on Create Quiz" + ex.ToString());
-            } 
+            }
             catch (Exception ex)
             {
                 Debug.WriteLine("Error on Create Quiz" + ex.ToString());
             }
-            
+
 
             Quiz quiz = new Quiz()
             {
@@ -148,14 +148,15 @@ namespace QuizForMe
         {
             TitleOfQuestionTextBox.Text = string.Empty;
             DescriptionQuestionTextBox.Text = string.Empty;
-            AuxiliarImageTextBox.Text = string.Empty;
             OptionATextBox.Text = string.Empty;
             OptionBTextBox.Text = string.Empty;
             OptionCTextBox.Text = string.Empty;
             OptionDTextBox.Text = string.Empty;
-            CorrectOptionTextBox.Text = string.Empty;
+            CorrectionOptionComboBox.Text = string.Empty;
             ThemeQuestionComboBox.Text = string.Empty;
             DifficultyComboBox.Text = string.Empty;
+            label6.Text = string.Empty;
+            label7.Text = string.Empty;
         }
 
         public int GetPointsToEarn(int Difficulty)
@@ -179,6 +180,29 @@ namespace QuizForMe
                 case 4: return 10;
                 default: return 0;
             }
+        }
+
+        private void SelectimageQuizButton_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                PathUrl = openFileDialog1.FileName;
+                label6.Text = PathUrl;
+            }
+        }
+
+        private void ImagePathQuestion_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog2.ShowDialog() == DialogResult.OK)
+            {
+                AuxiliarImage = openFileDialog2.FileName;
+                label7.Text = AuxiliarImage;
+            }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
