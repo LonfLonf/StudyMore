@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateQuizButton));
             button1 = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
             dataGridView1 = new DataGridView();
@@ -43,10 +44,15 @@
             tableLayoutPanel2 = new TableLayoutPanel();
             RefreshTable = new Button();
             label1 = new Label();
+            tableLayoutPanel3 = new TableLayoutPanel();
+            pictureBox1 = new PictureBox();
+            label2 = new Label();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)quizBindingSource).BeginInit();
             tableLayoutPanel2.SuspendLayout();
+            tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -139,15 +145,17 @@
             // tableLayoutPanel2
             // 
             tableLayoutPanel2.ColumnCount = 1;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.Controls.Add(RefreshTable, 0, 0);
             tableLayoutPanel2.Controls.Add(label1, 0, 1);
+            tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 2);
             tableLayoutPanel2.Location = new Point(907, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 2;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 23.1638412F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 76.83616F));
-            tableLayoutPanel2.Size = new Size(274, 177);
+            tableLayoutPanel2.RowCount = 3;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 15.44256F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 51.2241058F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel2.Size = new Size(274, 485);
             tableLayoutPanel2.TabIndex = 2;
             // 
             // RefreshTable
@@ -163,11 +171,45 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(3, 41);
+            label1.Location = new Point(3, 74);
             label1.Name = "label1";
             label1.Size = new Size(102, 75);
             label1.TabIndex = 1;
             label1.Text = "Theme Quiz Rank:\r\n1 - Easy\r\n2 - Medium\r\n3 - Hard\r\n4 - Master\r\n";
+            // 
+            // tableLayoutPanel3
+            // 
+            tableLayoutPanel3.ColumnCount = 2;
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.Controls.Add(pictureBox1, 0, 0);
+            tableLayoutPanel3.Controls.Add(label2, 1, 0);
+            tableLayoutPanel3.Location = new Point(3, 325);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
+            tableLayoutPanel3.RowCount = 2;
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.Size = new Size(268, 157);
+            tableLayoutPanel3.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(128, 72);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(137, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(71, 45);
+            label2.TabIndex = 1;
+            label2.Text = "LonfLonf\r\nPoints: 0\r\nI'm The Best\r\n";
             // 
             // CreateQuizButton
             // 
@@ -182,6 +224,9 @@
             ((System.ComponentModel.ISupportInitialize)quizBindingSource).EndInit();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
+            tableLayoutPanel3.ResumeLayout(false);
+            tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -201,5 +246,8 @@
         private TableLayoutPanel tableLayoutPanel2;
         private Button RefreshTable;
         private Label label1;
+        private TableLayoutPanel tableLayoutPanel3;
+        private PictureBox pictureBox1;
+        private Label label2;
     }
 }
