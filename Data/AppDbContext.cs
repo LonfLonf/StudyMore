@@ -20,5 +20,15 @@ namespace QuizForMe.Data
             optionsBuilder.UseSqlServer("Server=LonfTonf;Database=idk;Trusted_Connection=True;TrustServerCertificate=True;");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Question>()
+                .HasOne<Quiz>()
+                .WithMany(quiz => quiz.Questions)
+                .HasForeignKey(quiz => quiz.QuizID)
+                .OnDelete(DeleteBehavior.Cascade);
+        }
+
     }
 }

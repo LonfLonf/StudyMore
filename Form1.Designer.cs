@@ -42,6 +42,7 @@
             quizBindingSource = new BindingSource(components);
             tableLayoutPanel2 = new TableLayoutPanel();
             RefreshTable = new Button();
+            label1 = new Label();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)quizBindingSource).BeginInit();
@@ -87,6 +88,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(898, 546);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClickAsync;
             // 
             // quizIdDataGridViewTextBoxColumn
             // 
@@ -139,6 +141,7 @@
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.Controls.Add(RefreshTable, 0, 0);
+            tableLayoutPanel2.Controls.Add(label1, 0, 1);
             tableLayoutPanel2.Location = new Point(907, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 2;
@@ -157,6 +160,15 @@
             RefreshTable.UseVisualStyleBackColor = true;
             RefreshTable.Click += RefreshTable_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(3, 41);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 75);
+            label1.TabIndex = 1;
+            label1.Text = "Theme Quiz Rank:\r\n1 - Easy\r\n2 - Medium\r\n3 - Hard\r\n4 - Master\r\n";
+            // 
             // CreateQuizButton
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -169,6 +181,7 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)quizBindingSource).EndInit();
             tableLayoutPanel2.ResumeLayout(false);
+            tableLayoutPanel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -187,5 +200,6 @@
         private DataGridViewButtonColumn PlayQuizButton;
         private TableLayoutPanel tableLayoutPanel2;
         private Button RefreshTable;
+        private Label label1;
     }
 }

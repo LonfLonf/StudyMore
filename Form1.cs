@@ -41,9 +41,27 @@ namespace QuizForMe
 
         private void RefreshTable_Click(object sender, EventArgs e)
         {
+            RefreshDataGrid();
+        }
+
+        private void RefreshDataGrid()
+        {
             this._context.Quizzes.Load();
             this.quizBindingSource.DataSource = _context.Quizzes.Local.ToBindingList();
             this.dataGridView1.Refresh();
+        }
+
+        private async void dataGridView1_CellContentClickAsync(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
+            int QuizId = Convert.ToInt32(selectedRow.Cells[0].Value);
+            var quiz = await _context.Quizzes.FindAsync(QuizId);
+            if (quiz != null)
+            {
+                _context.Quizzes.Remove(quiz);
+                await _context.SaveChangesAsync();
+                RefreshDataGrid();
+            }
         }
     }
 }
