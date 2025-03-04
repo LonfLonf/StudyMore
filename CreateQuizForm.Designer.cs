@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
+            ThemeQuizComboBox = new ComboBox();
             label4 = new Label();
-            ThemeQuizTextBox = new TextBox();
             label3 = new Label();
             URLQuizTextBox = new TextBox();
             label2 = new Label();
@@ -41,10 +41,10 @@
             openFileDialog1 = new OpenFileDialog();
             tableLayoutPanel2 = new TableLayoutPanel();
             ThemeLabel = new TableLayoutPanel();
+            DifficultyComboBox = new ComboBox();
+            ThemeQuestionComboBox = new ComboBox();
             DifficultLabel = new Label();
-            DifficultTextBox = new TextBox();
             ThemeOfQuestionTextBox = new Label();
-            ThemeQuestionTextBox = new TextBox();
             CorrectOptionLabel = new Label();
             CorrectOptionTextBox = new TextBox();
             OptionDLabel = new Label();
@@ -62,6 +62,7 @@
             TitleOfQuestionLabel = new Label();
             TitleOfQuestionTextBox = new TextBox();
             AddQuestion = new Button();
+            label5 = new Label();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ThemeLabel.SuspendLayout();
@@ -72,8 +73,8 @@
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 13.5304661F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 86.4695358F));
+            tableLayoutPanel1.Controls.Add(ThemeQuizComboBox, 1, 3);
             tableLayoutPanel1.Controls.Add(label4, 0, 3);
-            tableLayoutPanel1.Controls.Add(ThemeQuizTextBox, 1, 3);
             tableLayoutPanel1.Controls.Add(label3, 0, 2);
             tableLayoutPanel1.Controls.Add(URLQuizTextBox, 1, 2);
             tableLayoutPanel1.Controls.Add(label2, 0, 1);
@@ -93,6 +94,15 @@
             tableLayoutPanel1.Size = new Size(1116, 325);
             tableLayoutPanel1.TabIndex = 0;
             // 
+            // ThemeQuizComboBox
+            // 
+            ThemeQuizComboBox.FormattingEnabled = true;
+            ThemeQuizComboBox.Items.AddRange(new object[] { " Mathematics", " History", " ComputerScience", " Philosophy", " Programming", " MalwareDevelopment", " CyberSecurity", " OtherStuff" });
+            ThemeQuizComboBox.Location = new Point(154, 198);
+            ThemeQuizComboBox.Name = "ThemeQuizComboBox";
+            ThemeQuizComboBox.Size = new Size(121, 23);
+            ThemeQuizComboBox.TabIndex = 10;
+            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -101,13 +111,6 @@
             label4.Size = new Size(86, 15);
             label4.TabIndex = 6;
             label4.Text = "Theme Of Quiz";
-            // 
-            // ThemeQuizTextBox
-            // 
-            ThemeQuizTextBox.Location = new Point(154, 198);
-            ThemeQuizTextBox.Name = "ThemeQuizTextBox";
-            ThemeQuizTextBox.Size = new Size(100, 23);
-            ThemeQuizTextBox.TabIndex = 7;
             // 
             // label3
             // 
@@ -191,10 +194,10 @@
             ThemeLabel.ColumnCount = 2;
             ThemeLabel.ColumnStyles.Add(new ColumnStyle());
             ThemeLabel.ColumnStyles.Add(new ColumnStyle());
+            ThemeLabel.Controls.Add(DifficultyComboBox, 1, 9);
+            ThemeLabel.Controls.Add(ThemeQuestionComboBox, 1, 8);
             ThemeLabel.Controls.Add(DifficultLabel, 0, 9);
-            ThemeLabel.Controls.Add(DifficultTextBox, 1, 9);
             ThemeLabel.Controls.Add(ThemeOfQuestionTextBox, 0, 8);
-            ThemeLabel.Controls.Add(ThemeQuestionTextBox, 1, 8);
             ThemeLabel.Controls.Add(CorrectOptionLabel, 0, 7);
             ThemeLabel.Controls.Add(CorrectOptionTextBox, 1, 7);
             ThemeLabel.Controls.Add(OptionDLabel, 0, 6);
@@ -212,6 +215,7 @@
             ThemeLabel.Controls.Add(TitleOfQuestionLabel, 0, 0);
             ThemeLabel.Controls.Add(TitleOfQuestionTextBox, 1, 0);
             ThemeLabel.Controls.Add(AddQuestion, 0, 10);
+            ThemeLabel.Controls.Add(label5, 1, 10);
             ThemeLabel.Dock = DockStyle.Fill;
             ThemeLabel.Location = new Point(3, 3);
             ThemeLabel.Name = "ThemeLabel";
@@ -230,6 +234,24 @@
             ThemeLabel.Size = new Size(1110, 399);
             ThemeLabel.TabIndex = 0;
             // 
+            // DifficultyComboBox
+            // 
+            DifficultyComboBox.FormattingEnabled = true;
+            DifficultyComboBox.Items.AddRange(new object[] { "Easy", "Medium", "Hard", "Master" });
+            DifficultyComboBox.Location = new Point(141, 336);
+            DifficultyComboBox.Name = "DifficultyComboBox";
+            DifficultyComboBox.Size = new Size(121, 23);
+            DifficultyComboBox.TabIndex = 23;
+            // 
+            // ThemeQuestionComboBox
+            // 
+            ThemeQuestionComboBox.FormattingEnabled = true;
+            ThemeQuestionComboBox.Items.AddRange(new object[] { " Mathematics", " History", " ComputerScience", " Philosophy", " Programming", " MalwareDevelopment", " CyberSecurity", " OtherStuff" });
+            ThemeQuestionComboBox.Location = new Point(141, 299);
+            ThemeQuestionComboBox.Name = "ThemeQuestionComboBox";
+            ThemeQuestionComboBox.Size = new Size(121, 23);
+            ThemeQuestionComboBox.TabIndex = 22;
+            // 
             // DifficultLabel
             // 
             DifficultLabel.AutoSize = true;
@@ -239,13 +261,6 @@
             DifficultLabel.TabIndex = 18;
             DifficultLabel.Text = "Difficult Of Question";
             // 
-            // DifficultTextBox
-            // 
-            DifficultTextBox.Location = new Point(141, 336);
-            DifficultTextBox.Name = "DifficultTextBox";
-            DifficultTextBox.Size = new Size(100, 23);
-            DifficultTextBox.TabIndex = 19;
-            // 
             // ThemeOfQuestionTextBox
             // 
             ThemeOfQuestionTextBox.AutoSize = true;
@@ -254,13 +269,6 @@
             ThemeOfQuestionTextBox.Size = new Size(104, 15);
             ThemeOfQuestionTextBox.TabIndex = 16;
             ThemeOfQuestionTextBox.Text = "ThemeOfQuestion";
-            // 
-            // ThemeQuestionTextBox
-            // 
-            ThemeQuestionTextBox.Location = new Point(141, 299);
-            ThemeQuestionTextBox.Name = "ThemeQuestionTextBox";
-            ThemeQuestionTextBox.Size = new Size(100, 23);
-            ThemeQuestionTextBox.TabIndex = 17;
             // 
             // CorrectOptionLabel
             // 
@@ -400,6 +408,15 @@
             AddQuestion.UseVisualStyleBackColor = true;
             AddQuestion.Click += CreateQuiz_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(141, 370);
+            label5.Name = "label5";
+            label5.Size = new Size(38, 15);
+            label5.TabIndex = 21;
+            label5.Text = "label5";
+            // 
             // CreateQuizForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -423,7 +440,6 @@
 
         private TableLayoutPanel tableLayoutPanel1;
         private Label label4;
-        private TextBox ThemeQuizTextBox;
         private Label label3;
         private TextBox URLQuizTextBox;
         private Label label2;
@@ -444,8 +460,6 @@
         private Label DescriptionQuestionLabel;
         private Label TitleOfQuestionLabel;
         private Label DifficultLabel;
-        private TextBox DifficultTextBox;
-        private TextBox ThemeQuestionTextBox;
         private TextBox CorrectOptionTextBox;
         private TextBox OptionDTextBox;
         private TextBox OptionCTextBox;
@@ -455,5 +469,9 @@
         private TextBox DescriptionQuestionTextBox;
         private TextBox TitleOfQuestionTextBox;
         private Button AddQuestion;
+        private Label label5;
+        private ComboBox ThemeQuizComboBox;
+        private ComboBox DifficultyComboBox;
+        private ComboBox ThemeQuestionComboBox;
     }
 }
