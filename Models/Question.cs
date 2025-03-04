@@ -18,8 +18,8 @@ namespace QuizForMe.Models
         public string? Option_C { get; set; }
         public string? Option_D { get; set; }
         public required char CorrectOption { get; set; }
-        public required int PointsToEarn { get; set; }
-        public required int PointsToLost { get; set; }
+        public int? PointsToEarn { get; set; }
+        public int? PointsToLost { get; set; }
         public required DateTime CreatedAt { get; set; }
 
         public Themes ThemeOfQuestion { get; set; }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations;
 using QuizForMe.Models;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,8 @@ namespace QuizForMe.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlite("Data Source=idk.db");
+            optionsBuilder.UseSqlServer("Server=LonfTonf;Database=idk;Trusted_Connection=True;TrustServerCertificate=True;");
         }
+
     }
 }

@@ -9,7 +9,7 @@ namespace QuizForMe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormForQuiz ffq = new FormForQuiz();
+            CreateQuizForm ffq = new CreateQuizForm();
             ffq.ShowDialog();
         }
     }
