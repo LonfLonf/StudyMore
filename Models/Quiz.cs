@@ -16,6 +16,7 @@ namespace QuizForMe.Models
         public int PointsEarned { get; set; }
         public int PointsLosted { get; set; }
         public Themes ThemeOfQuiz { get; set; }
+        public required string CreatedAt { get; set; }
         public required List<Question> Questions { get; set; }
 
     }

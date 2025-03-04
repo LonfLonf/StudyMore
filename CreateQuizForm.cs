@@ -112,6 +112,8 @@ namespace QuizForMe
         {
             string QuizTitle = TitleOfQuizTextBox.Text;
             string QuizDescription = DescriptioQuizTextBox.Text;
+            DateTime CreatedAt = DateTime.Now;
+            string myDateTimeString = CreatedAt.ToString("yyyy-MM-dd hh:mm:ss");
             Themes theme = Themes.OtherStuff;
 
             try
@@ -134,12 +136,14 @@ namespace QuizForMe
                 QuizDescription = QuizDescription,
                 ThumbnailQuizPath = PathUrl,
                 ThemeOfQuiz = theme,
+                CreatedAt = myDateTimeString,
                 Questions = QuestionsList
             };
 
             if (QuestionsList.Count > 0)
             {
                 _context.Quizzes.Add(quiz);
+                
                 await _context.SaveChangesAsync();
             }
         }
