@@ -99,24 +99,28 @@ namespace QuizForMe
             buttonOptionA.TextAlign = ContentAlignment.MiddleCenter;
             buttonOptionA.Size = new Size(200, 54);
             buttonOptionA.Dock = DockStyle.Right;
+            buttonOptionA.Click += buttonA_Click;
 
             Button buttonOptionB = new Button();
             buttonOptionB.Text = question.Option_B;
             buttonOptionB.TextAlign = ContentAlignment.MiddleCenter;
             buttonOptionB.Size = new Size(200, 54);
             buttonOptionB.Dock = DockStyle.Left;
+            buttonOptionB.Click += buttonB_Click;
 
             Button buttonOptionC = new Button();
             buttonOptionC.Text = question.Option_C;
             buttonOptionC.TextAlign = ContentAlignment.MiddleCenter;
             buttonOptionC.Size = new Size(200, 54);
             buttonOptionC.Dock = DockStyle.Right;
+            buttonOptionC.Click += buttonC_Click;
 
             Button buttonOptionD = new Button();
             buttonOptionD.Text = question.Option_D;
             buttonOptionD.TextAlign = ContentAlignment.MiddleCenter;
             buttonOptionD.Size = new Size(200, 54);
             buttonOptionD.Dock = DockStyle.Left;
+            buttonOptionD.Click += buttonD_Click;
 
             tableLayoutPanelButtonOptions.Controls.Add(buttonOptionA,0,0);
             tableLayoutPanelButtonOptions.Controls.Add(buttonOptionB,1,0);
@@ -172,14 +176,41 @@ namespace QuizForMe
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private bool checkCorrectAnswer(char answer)
         {
-
+            return answer == Questions[index].CorrectOption;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void handleAnswer(Button button, char answer)
         {
+            if (checkCorrectAnswer(answer))
+            {
+                button.BackColor = Color.Green;
+            }
+            else
+            {
+                button.BackColor = Color.Red;  
+            }
+        }
 
+        private void buttonA_Click(object sender, EventArgs e)
+        {
+            handleAnswer((Button)sender, 'A');
+        }
+
+        private void buttonB_Click(object sender, EventArgs e)
+        {
+            handleAnswer((Button)sender, 'B');
+        }
+
+        private void buttonC_Click(object sender, EventArgs e)
+        {
+            handleAnswer((Button)sender, 'C');
+        }
+
+        private void buttonD_Click(object sender, EventArgs e)
+        {
+            handleAnswer((Button)sender, 'D');
         }
     }
 }
