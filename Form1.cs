@@ -71,7 +71,8 @@ namespace QuizForMe
             }
             else if (dataGridView1.Columns[e.ColumnIndex].Name == "PlayQuizButton")
             {
-                QuizForm quizForm = new QuizForm(quiz);
+                QuizForm quizForm = new QuizForm();
+                await quizForm.QuizFormAsync(quiz);
                 quizForm.ShowDialog();
             }
         }
