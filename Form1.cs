@@ -56,11 +56,23 @@ namespace QuizForMe
             DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
             int QuizId = Convert.ToInt32(selectedRow.Cells[0].Value);
             var quiz = await _context.Quizzes.FindAsync(QuizId);
-            if (quiz != null)
+
+            if (quiz == null)
+            {
+                throw new Exception("Fudeu");
+            }
+
+            if (dataGridView1.Columns[e.ColumnIndex].Name == "DeleteButtonQuiz")
             {
                 _context.Quizzes.Remove(quiz);
                 await _context.SaveChangesAsync();
                 RefreshDataGrid();
+                
+            }
+            else if (dataGridView1.Columns[e.ColumnIndex].Name == "PlayQuizButton")
+            {
+                QuizForm quizForm = new QuizForm(quiz);
+                quizForm.ShowDialog();
             }
         }
     }

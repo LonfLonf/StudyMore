@@ -144,3 +144,4 @@ C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\L
 C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\ref\QuizForMe.dll
 C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\bin\Debug\net8.0-windows\System.ClientModel.dll
 C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+C:\Users\firey\Desktop\litteThings\LittleLittleThings\LittleLittleLittleThings\LittleQuiz\QuizForMe\obj\Debug\net8.0-windows\QuizForMe.QuizForm.resources
