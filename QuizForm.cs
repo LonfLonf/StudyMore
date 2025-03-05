@@ -74,11 +74,11 @@ namespace QuizForMe
             Title.Location = new Point(569, 15);
 
             Label Description = new Label();
-            Description.MinimumSize = new Size(250, Title.MinimumSize.Height);
+            Description.MinimumSize = new Size(223, Title.MinimumSize.Height);
             Description.MaximumSize = new Size(Title.MaximumSize.Width, 25);
             Description.Text = question.DescriptionOfQuestion;
             Description.TextAlign = ContentAlignment.MiddleCenter;
-            Description.Location = new Point(622, 41);
+            Description.Location = new Point(569, 41);
 
             PictureBox pictureBoxImage = new PictureBox();
             pictureBoxImage.Location = new Point(436, 89);
@@ -89,33 +89,33 @@ namespace QuizForMe
             // Buttons Options
 
             TableLayoutPanel tableLayoutPanelButtonOptions = new TableLayoutPanel();
-            tableLayoutPanelButtonOptions.Location = new Point(12, 403);
+            tableLayoutPanelButtonOptions.Location = new Point(470, 403);
             tableLayoutPanelButtonOptions.Size = new Size(1339, 121);
             tableLayoutPanelButtonOptions.ColumnCount = 2;
             tableLayoutPanelButtonOptions.RowCount = 2;
 
             Button buttonOptionA = new Button();
-            buttonOptionA.Text = "A";
+            buttonOptionA.Text = question.Option_A;
             buttonOptionA.TextAlign = ContentAlignment.MiddleCenter;
-            buttonOptionA.Size = new Size(147, 54);
+            buttonOptionA.Size = new Size(200, 54);
             buttonOptionA.Dock = DockStyle.Right;
 
             Button buttonOptionB = new Button();
-            buttonOptionB.Text = "B";
+            buttonOptionB.Text = question.Option_B;
             buttonOptionB.TextAlign = ContentAlignment.MiddleCenter;
-            buttonOptionB.Size = new Size(147, 54);
+            buttonOptionB.Size = new Size(200, 54);
             buttonOptionB.Dock = DockStyle.Left;
 
             Button buttonOptionC = new Button();
-            buttonOptionC.Text = "C";
+            buttonOptionC.Text = question.Option_C;
             buttonOptionC.TextAlign = ContentAlignment.MiddleCenter;
-            buttonOptionC.Size = new Size(147, 54);
+            buttonOptionC.Size = new Size(200, 54);
             buttonOptionC.Dock = DockStyle.Right;
 
             Button buttonOptionD = new Button();
-            buttonOptionD.Text = "D";
+            buttonOptionD.Text = question.Option_D;
             buttonOptionD.TextAlign = ContentAlignment.MiddleCenter;
-            buttonOptionD.Size = new Size(147, 54);
+            buttonOptionD.Size = new Size(200, 54);
             buttonOptionD.Dock = DockStyle.Left;
 
             tableLayoutPanelButtonOptions.Controls.Add(buttonOptionA,0,0);
@@ -148,6 +148,7 @@ namespace QuizForMe
             panel.Controls.Add(Title);
             panel.Controls.Add(Description);
             panel.Controls.Add(tableLayoutPanelButtonOptions);
+            panel.Controls.Add(pictureBoxImage);
             panel.Controls.Add(tableLayoutPanelButtonsPreviousAndNext);
 
             return panel;
