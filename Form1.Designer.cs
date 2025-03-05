@@ -217,6 +217,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1184, 596);
             Controls.Add(tableLayoutPanel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "CreateQuizButton";
             Text = "Form1";
             tableLayoutPanel1.ResumeLayout(false);

@@ -32,6 +32,7 @@ namespace QuizForMe
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuizForm));
             SuspendLayout();
             // 
             // QuizForm
@@ -39,6 +40,7 @@ namespace QuizForMe
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1363, 595);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "QuizForm";
             Text = "Quiz";
             ResumeLayout(false);

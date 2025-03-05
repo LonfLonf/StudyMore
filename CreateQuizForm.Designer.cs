@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateQuizForm));
             tableLayoutPanel1 = new TableLayoutPanel();
             ThemeQuizComboBox = new ComboBox();
             label4 = new Label();
@@ -40,6 +41,7 @@
             CreateQuiz = new Button();
             label6 = new Label();
             SelectimageQuizButton = new Button();
+            label8 = new Label();
             openFileDialog1 = new OpenFileDialog();
             openFileDialog2 = new OpenFileDialog();
             ThemeLabel = new TableLayoutPanel();
@@ -69,7 +71,6 @@
             tableLayoutPanel2 = new TableLayoutPanel();
             contextMenuStrip1 = new ContextMenuStrip(components);
             label9 = new Label();
-            label8 = new Label();
             tableLayoutPanel1.SuspendLayout();
             ThemeLabel.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -198,6 +199,15 @@
             SelectimageQuizButton.Text = "Select Image For Quiz";
             SelectimageQuizButton.UseVisualStyleBackColor = true;
             SelectimageQuizButton.Click += SelectimageQuizButton_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(97, 144);
+            label8.Name = "label8";
+            label8.Size = new Size(38, 15);
+            label8.TabIndex = 13;
+            label8.Text = "label8";
             // 
             // openFileDialog1
             // 
@@ -480,15 +490,6 @@
             label9.TabIndex = 16;
             label9.Text = "First Create a Question after create a Quiz\r\nThis form is Ugly\r\nIn Question put a Question A and B, it's required BRO!\r\n";
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(97, 144);
-            label8.Name = "label8";
-            label8.Size = new Size(38, 15);
-            label8.TabIndex = 13;
-            label8.Text = "label8";
-            // 
             // CreateQuizForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -497,6 +498,7 @@
             Controls.Add(label9);
             Controls.Add(tableLayoutPanel2);
             Controls.Add(tableLayoutPanel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "CreateQuizForm";
             Text = "CreateQuizForm";
             Load += CreateQuizForm_Load;
