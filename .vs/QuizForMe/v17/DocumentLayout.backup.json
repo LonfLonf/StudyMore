@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|c:\\users\\firey\\desktop\\littethings\\littlelittlethings\\littlelittlelittlethings\\littlequiz\\quizforme\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|c:\\users\\firey\\desktop\\littethings\\littlelittlethings\\littlelittlelittlethings\\littlequiz\\quizforme\\createquizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|solutionrelative:createquizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|c:\\users\\firey\\desktop\\littethings\\littlelittlethings\\littlelittlelittlethings\\littlequiz\\quizforme\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|c:\\users\\firey\\desktop\\littethings\\littlelittlethings\\littlelittlelittlethings\\littlequiz\\quizforme\\quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|solutionrelative:quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|c:\\users\\firey\\desktop\\littethings\\littlelittlethings\\littlelittlelittlethings\\littlequiz\\quizforme\\quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|solutionrelative:quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|c:\\users\\firey\\desktop\\littethings\\littlelittlethings\\littlelittlelittlethings\\littlequiz\\quizforme\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +19,12 @@
       "RelativeMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|c:\\users\\firey\\desktop\\littethings\\littlelittlethings\\littlelittlelittlethings\\littlequiz\\quizforme\\quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|solutionrelative:quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|c:\\users\\firey\\desktop\\littethings\\littlelittlethings\\littlelittlelittlethings\\littlequiz\\quizforme\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|c:\\users\\firey\\desktop\\littethings\\littlelittlethings\\littlelittlelittlethings\\littlequiz\\quizforme\\quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1544510-9051-4C0E-81B0-B72E8FA7BD71}|QuizForMe.csproj|solutionrelative:quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,16 +44,16 @@
         },
         {
           "DockedWidth": 317,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\Form1.cs*",
-              "RelativeToolTip": "Form1.cs*",
+              "ToolTip": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T09:26:25.669Z",
@@ -73,62 +61,25 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-03-05T20:19:26.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\Form1.cs [Design]*",
-              "RelativeToolTip": "Form1.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:19:13.193Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateQuizForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\CreateQuizForm.cs",
-              "RelativeDocumentMoniker": "CreateQuizForm.cs",
-              "ToolTip": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\CreateQuizForm.cs [Design]*",
-              "RelativeToolTip": "CreateQuizForm.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:19:03.184Z",
-              "EditorCaption": " [Design]"
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "QuizForm.cs",
               "DocumentMoniker": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\QuizForm.cs",
               "RelativeDocumentMoniker": "QuizForm.cs",
-              "ToolTip": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\QuizForm.cs*",
-              "RelativeToolTip": "QuizForm.cs*",
-              "ViewState": "AgIAACcAAAAAAAAAAAAgwDYAAAAhAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\QuizForm.cs",
+              "RelativeToolTip": "QuizForm.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAG4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T16:32:24.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -141,20 +92,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\Models\\Question.cs",
               "RelativeDocumentMoniker": "Models\\Question.cs",
               "ToolTip": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\Models\\Question.cs",
               "RelativeToolTip": "Models\\Question.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T18:02:30.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Quiz.cs",
               "DocumentMoniker": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\Models\\Quiz.cs",
               "RelativeDocumentMoniker": "Models\\Quiz.cs",
@@ -167,12 +118,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "QuizForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\QuizForm.cs",
               "RelativeDocumentMoniker": "QuizForm.cs",
-              "ToolTip": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\QuizForm.cs [Design]*",
-              "RelativeToolTip": "QuizForm.cs [Design]*",
+              "ToolTip": "C:\\Users\\firey\\Desktop\\litteThings\\LittleLittleThings\\LittleLittleLittleThings\\LittleQuiz\\QuizForMe\\QuizForm.cs [Design]",
+              "RelativeToolTip": "QuizForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T04:35:34.99Z",
               "EditorCaption": " [Design]"

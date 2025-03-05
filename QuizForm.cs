@@ -45,6 +45,7 @@ namespace QuizForMe
 
         private void QuizForm_Load()
         {
+            Debug.WriteLine("FUI CHAMADO NESSA PORRA");
             for (int i = 0; i < Questions.Length; i++)
             {
                 Panel panel = CreatePanel(Questions[i]);
@@ -56,6 +57,7 @@ namespace QuizForMe
             {
                 Panels[index].BringToFront();
             }
+            Debug.WriteLine("METI O PE NESSA PORRA");
         }
 
         private Panel CreatePanel(Question question)
